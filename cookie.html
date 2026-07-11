@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Policy | Amanda Benedetta - Book Marketing Strategist</title>
+    <meta name="description" content="Cookie Policy for Amanda Benedetta Book Marketing Services">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --navy-deep: #0A1628;
+            --navy-primary: #0F2741;
+            --royal-blue: #1A4B8E;
+            --gold-primary: #C9A961;
+            --gold-bright: #D4AF37;
+            --champagne: #F5E6D3;
+            --cream: #FAF7F2;
+            --ivory: #FFFFF0;
+            --charcoal: #2C3E50;
+            --slate: #475569;
+            --white: #FFFFFF;
+            
+            --gradient-blue-dark: linear-gradient(135deg, #0A1628 0%, #1A4B8E 100%);
+            --gradient-gold: linear-gradient(135deg, #C9A961 0%, #D4AF37 50%, #E8D4A0 100%);
+            
+            --font-display: 'Playfair Display', serif;
+            --font-body: 'Montserrat', sans-serif;
+            
+            --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.12);
+            --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.15);
+            
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --radius-full: 9999px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--charcoal);
+            line-height: 1.7;
+            background: var(--ivory);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 10000;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(201, 169, 97, 0.2);
+            box-shadow: var(--shadow-md);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            text-decoration: none;
+        }
+
+        .logo-main {
+            font-family: var(--font-display);
+            font-size: 1.75rem;
+            font-weight: 800;
+            background: var(--gradient-blue-dark);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.02em;
+        }
+
+        .logo-tagline {
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--gold-primary);
+        }
+
+        .back-home {
+            background: var(--gradient-gold);
+            color: var(--navy-deep);
+            padding: 0.75rem 2rem;
+            border-radius: var(--radius-full);
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(201, 169, 97, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .back-home:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(201, 169, 97, 0.4);
+        }
+
+        /* Legal Content */
+        .legal-hero {
+            background: var(--gradient-blue-dark);
+            padding: 150px 2rem 80px;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .legal-hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+
+        .legal-hero p {
+            font-size: 1.125rem;
+            color: var(--champagne);
+        }
+
+        .legal-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 80px 2rem;
+        }
+
+        .legal-section {
+            margin-bottom: 3rem;
+        }
+
+        .legal-section h2 {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            color: var(--navy-deep);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--gold-primary);
+        }
+
+        .legal-section h3 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: var(--royal-blue);
+            margin: 2rem 0 1rem;
+        }
+
+        .legal-section p {
+            font-size: 1.0625rem;
+            line-height: 1.8;
+            color: var(--slate);
+            margin-bottom: 1.25rem;
+        }
+
+        .legal-section ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 1.5rem 0;
+        }
+
+        .legal-section ul li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.0625rem;
+            line-height: 1.7;
+            color: var(--slate);
+        }
+
+        .legal-section ul li::before {
+            content: "🍪";
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+
+        .cookie-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: var(--white);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+
+        .cookie-table th {
+            background: var(--gradient-blue-dark);
+            color: var(--white);
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .cookie-table td {
+            padding: 1rem;
+            border-bottom: 1px solid rgba(201, 169, 97, 0.2);
+        }
+
+        .cookie-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .cookie-table tr:nth-child(even) {
+            background: rgba(201, 169, 97, 0.05);
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(201, 169, 97, 0.1), rgba(212, 175, 55, 0.05));
+            border-left: 4px solid var(--gold-primary);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            margin: 2rem 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+        }
+
+        .contact-info {
+            background: var(--cream);
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        .contact-info h3 {
+            font-family: var(--font-display);
+            font-size: 1.75rem;
+            color: var(--navy-deep);
+            margin-bottom: 1rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info a {
+            color: var(--gold-primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .last-updated {
+            text-align: center;
+            font-style: italic;
+            color: var(--slate);
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(201, 169, 97, 0.3);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--navy-deep);
+            color: var(--champagne);
+            padding: 3rem 0 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--champagne);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--gold-bright);
+        }
+
+        .footer p {
+            font-size: 0.875rem;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .legal-hero {
+                padding: 120px 1.5rem 60px;
+            }
+
+            .legal-content {
+                padding: 60px 1.5rem;
+            }
+
+            .legal-section h2 {
+                font-size: 1.75rem;
+            }
+
+            .cookie-table {
+                font-size: 0.9rem;
+            }
+
+            .cookie-table th,
+            .cookie-table td {
+                padding: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-wrapper">
+                <div class="logo-main">Amanda Benedetta</div>
+                <div class="logo-tagline">Book Marketing Strategist</div>
+            </a>
+            <a href="index.html" class="back-home">← Back to Home</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="legal-hero">
+        <h1>Cookie Policy</h1>
+        <p>Understanding how we use cookies on our website</p>
+    </section>
+
+    <!-- Legal Content -->
+    <div class="legal-content">
+        <div class="legal-section">
+            <div class="highlight-box">
+                <p><strong>Effective Date:</strong> January 1, 2024</p>
+                <p><strong>Last Updated:</strong> January 1, 2024</p>
+            </div>
+        </div>
+
+        <div class="legal-section">
+            <h2>1. What Are Cookies?</h2>
+            <p>Cookies are small text files that are placed on your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently and provide information to website owners.</p>
+            <p>Cookies allow websites to recognize your device and store information about your preferences or past actions, making your browsing experience more convenient and personalized.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>2. How We Use Cookies</h2>
+            <p>Amanda Benedetta Book Marketing Services uses cookies to:</p>
+            <ul>
+                <li>Enable essential website functionality</li>
+                <li>Remember your preferences and settings</li>
+                <li>Understand how you interact with our website</li>
+                <li>Improve our website performance and user experience</li>
+                <li>Analyze website traffic and usage patterns</li>
+                <li>Deliver relevant marketing and advertising content</li>
+                <li>Protect against fraud and enhance security</li>
+            </ul>
+        </div>
+
+        <div class="legal-section">
+            <h2>3. Types of Cookies We Use</h2>
+
+            <h3>3.1 Essential Cookies</h3>
+            <p>These cookies are necessary for the website to function properly. They enable core functionality such as security, network management, and accessibility. You cannot opt out of these cookies.</p>
+
+            <table class="cookie-table">
+                <thead>
+                    <tr>
+                        <th>Cookie Name</th>
+                        <th>Purpose</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>session_id</td>
+                        <td>Maintains your session while browsing</td>
+                        <td>Session</td>
+                    </tr>
+                    <tr>
+                        <td>security_token</td>
+                        <td>Protects against CSRF attacks</td>
+                        <td>Session</td>
+                    </tr>
+                    <tr>
+                        <td>cookie_consent</td>
+                        <td>Remembers your cookie preferences</td>
+                        <td>1 year</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>3.2 Performance Cookies</h3>
+            <p>These cookies collect information about how you use our website, such as which pages you visit and if you experience any errors. This helps us improve our website's performance.</p>
+
+            <table class="cookie-table">
+                <thead>
+                    <tr>
+                        <th>Cookie Name</th>
+                        <th>Purpose</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>_ga</td>
+                        <td>Google Analytics: Distinguishes users</td>
+                        <td>2 years</td>
+                    </tr>
+                    <tr>
+                        <td>_gid</td>
+                        <td>Google Analytics: Distinguishes users</td>
+                        <td>24 hours</td>
+                    </tr>
+                    <tr>
+                        <td>_gat</td>
+                        <td>Google Analytics: Throttles request rate</td>
+                        <td>1 minute</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>3.3 Functionality Cookies</h3>
+            <p>These cookies allow our website to remember choices you make (such as your username, language, or region) and provide enhanced, personalized features.</p>
+
+            <table class="cookie-table">
+                <thead>
+                    <tr>
+                        <th>Cookie Name</th>
+                        <th>Purpose</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>user_preferences</td>
+                        <td>Stores your website preferences</td>
+                        <td>1 year</td>
+                    </tr>
+                    <tr>
+                        <td>language</td>
+                        <td>Remembers your language preference</td>
+                        <td>1 year</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>3.4 Marketing Cookies</h3>
+            <p>These cookies track your online activity to help advertisers deliver more relevant advertising or to limit how many times you see an advertisement.</p>
+
+            <table class="cookie-table">
+                <thead>
+                    <tr>
+                        <th>Cookie Name</th>
+                        <th>Purpose</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>_fbp</td>
+                        <td>Facebook Pixel: Tracks conversions</td>
+                        <td>3 months</td>
+                    </tr>
+                    <tr>
+                        <td>_gcl_au</td>
+                        <td>Google AdSense: Experiments with ads</td>
+                        <td>3 months</td>
+                    </tr>
+                    <tr>
+                        <td>IDE</td>
+                        <td>Google DoubleClick: Serves targeted ads</td>
+                        <td>1 year</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="legal-section">
+            <h2>4. Third-Party Cookies</h2>
+            <p>In addition to our own cookies, we may use various third-party cookies to report usage statistics and deliver advertisements:</p>
+
+            <h3>4.1 Analytics Services</h3>
+            <ul>
+                <li><strong>Google Analytics:</strong> Helps us understand how visitors interact with our website</li>
+                <li><strong>Hotjar:</strong> Provides heatmaps and session recordings to improve user experience</li>
+            </ul>
+
+            <h3>4.2 Advertising Networks</h3>
+            <ul>
+                <li><strong>Google Ads:</strong> Delivers targeted advertising based on your interests</li>
+                <li><strong>Facebook Pixel:</strong> Tracks conversions and builds audiences for Facebook ads</li>
+            </ul>
+
+            <h3>4.3 Social Media</h3>
+            <ul>
+                <li><strong>Facebook:</strong> Social sharing and Like buttons</li>
+                <li><strong>Twitter:</strong> Tweet button and social sharing</li>
+                <li><strong>LinkedIn:</strong> Share button and professional networking</li>
+            </ul>
+        </div>
+
+        <div class="legal-section">
+            <h2>5. How to Control Cookies</h2>
+            
+            <h3>5.1 Browser Settings</h3>
+            <p>Most web browsers allow you to control cookies through their settings. You can set your browser to:</p>
+            <ul>
+                <li>Block all cookies</li>
+                <li>Only accept first-party cookies</li>
+                <li>Delete cookies when you close your browser</li>
+                <li>Notify you when a cookie is being set</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><strong>Note:</strong> Blocking or deleting cookies may impact your experience on our website and limit the functionality available to you.</p>
+            </div>
+
+            <h3>5.2 Browser-Specific Instructions</h3>
+            <p>Here's how to manage cookies in popular browsers:</p>
+            <ul>
+                <li><strong>Google Chrome:</strong> Settings > Privacy and Security > Cookies and other site data</li>
+                <li><strong>Mozilla Firefox:</strong> Options > Privacy & Security > Cookies and Site Data</li>
+                <li><strong>Safari:</strong> Preferences > Privacy > Cookies and website data</li>
+                <li><strong>Microsoft Edge:</strong> Settings > Cookies and site permissions > Cookies and site data</li>
+            </ul>
+
+            <h3>5.3 Opt-Out Tools</h3>
+            <p>You can opt out of targeted advertising cookies through these services:</p>
+            <ul>
+                <li><strong>Google Ads Settings:</strong> https://adssettings.google.com</li>
+                <li><strong>Facebook Ad Preferences:</strong> https://www.facebook.com/ads/preferences</li>
+                <li><strong>Network Advertising Initiative:</strong> https://optout.networkadvertising.org</li>
+                <li><strong>Digital Advertising Alliance:</strong> https://optout.aboutads.info</li>
+            </ul>
+        </div>
+
+        <div class="legal-section">
+            <h2>6. Do Not Track Signals</h2>
+            <p>Some browsers include a "Do Not Track" (DNT) feature that signals to websites that you do not want to have your online activity tracked. Currently, there is no industry standard for how to respond to DNT signals.</p>
+            <p>At this time, our website does not respond to DNT browser signals or mechanisms. We will continue to monitor developments around DNT browser technology.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>7. Cookies and Mobile Devices</h2>
+            <p>If you access our website through a mobile device, cookies and similar technologies work in much the same way as on desktop computers. You can typically manage cookies through your mobile browser settings.</p>
+            <p>Additionally, you can control advertising identifiers on mobile devices:</p>
+            <ul>
+                <li><strong>iOS:</strong> Settings > Privacy > Advertising > Limit Ad Tracking</li>
+                <li><strong>Android:</strong> Settings > Google > Ads > Opt out of Ads Personalization</li>
+            </ul>
+        </div>
+
+        <div class="legal-section">
+            <h2>8. Cookie Lifespan</h2>
+            <p>Cookies have different lifespans:</p>
+
+            <h3>8.1 Session Cookies</h3>
+            <p>These are temporary cookies that expire when you close your browser. They help our website remember what you choose when you move from page to page during a single browsing session.</p>
+
+            <h3>8.2 Persistent Cookies</h3>
+            <p>These cookies remain on your device for a set period (specified in the cookie) or until you delete them. They help our website recognize you when you return and remember your preferences.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>9. Updates to This Cookie Policy</h2>
+            <p>We may update this Cookie Policy from time to time to reflect changes in our practices, technologies, legal requirements, and other factors.</p>
+            <p>When we make changes, we will update the "Last Updated" date at the top of this policy. We encourage you to review this Cookie Policy periodically to stay informed about our use of cookies.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>10. More Information</h2>
+            <p>For more information about cookies and how they work, you can visit:</p>
+            <ul>
+                <li><strong>All About Cookies:</strong> https://www.allaboutcookies.org</li>
+                <li><strong>Network Advertising Initiative:</strong> https://www.networkadvertising.org</li>
+                <li><strong>Digital Advertising Alliance:</strong> https://www.aboutads.info</li>
+            </ul>
+
+            <p>For information about our overall privacy practices, please see our <a href="privacy-policy.html" style="color: var(--gold-primary); font-weight: 600;">Privacy Policy</a>.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>11. Contact Us</h2>
+            <div class="contact-info">
+                <h3>Questions About Cookies?</h3>
+                <p>If you have any questions about our use of cookies or this Cookie Policy, please contact us:</p>
+                <p><strong>Email:</strong> <a href="mailto:amandabenedetta4@gmail.com">amandabenedetta4@gmail.com</a></p>
+                <p><strong>Website:</strong> <a href="index.html">www.amandabenedetta.com</a></p>
+            </div>
+        </div>
+
+        <div class="last-updated">
+            <p>This Cookie Policy was last updated on January 1, 2024</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+                <a href="cookie-policy.html">Cookie Policy</a>
+            </div>
+            <p>&copy; 2024 Amanda Benedetta. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

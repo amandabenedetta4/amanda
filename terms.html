@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | Amanda Benedetta - Book Marketing Strategist</title>
+    <meta name="description" content="Terms of Service for Amanda Benedetta Book Marketing Services">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --navy-deep: #0A1628;
+            --navy-primary: #0F2741;
+            --royal-blue: #1A4B8E;
+            --gold-primary: #C9A961;
+            --gold-bright: #D4AF37;
+            --champagne: #F5E6D3;
+            --cream: #FAF7F2;
+            --ivory: #FFFFF0;
+            --charcoal: #2C3E50;
+            --slate: #475569;
+            --white: #FFFFFF;
+            
+            --gradient-blue-dark: linear-gradient(135deg, #0A1628 0%, #1A4B8E 100%);
+            --gradient-gold: linear-gradient(135deg, #C9A961 0%, #D4AF37 50%, #E8D4A0 100%);
+            
+            --font-display: 'Playfair Display', serif;
+            --font-body: 'Montserrat', sans-serif;
+            
+            --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.12);
+            --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.15);
+            
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --radius-full: 9999px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--charcoal);
+            line-height: 1.7;
+            background: var(--ivory);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 10000;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(201, 169, 97, 0.2);
+            box-shadow: var(--shadow-md);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            text-decoration: none;
+        }
+
+        .logo-main {
+            font-family: var(--font-display);
+            font-size: 1.75rem;
+            font-weight: 800;
+            background: var(--gradient-blue-dark);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.02em;
+        }
+
+        .logo-tagline {
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--gold-primary);
+        }
+
+        .back-home {
+            background: var(--gradient-gold);
+            color: var(--navy-deep);
+            padding: 0.75rem 2rem;
+            border-radius: var(--radius-full);
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(201, 169, 97, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .back-home:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(201, 169, 97, 0.4);
+        }
+
+        /* Legal Content */
+        .legal-hero {
+            background: var(--gradient-blue-dark);
+            padding: 150px 2rem 80px;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .legal-hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+
+        .legal-hero p {
+            font-size: 1.125rem;
+            color: var(--champagne);
+        }
+
+        .legal-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 80px 2rem;
+        }
+
+        .legal-section {
+            margin-bottom: 3rem;
+        }
+
+        .legal-section h2 {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            color: var(--navy-deep);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--gold-primary);
+        }
+
+        .legal-section h3 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: var(--royal-blue);
+            margin: 2rem 0 1rem;
+        }
+
+        .legal-section p {
+            font-size: 1.0625rem;
+            line-height: 1.8;
+            color: var(--slate);
+            margin-bottom: 1.25rem;
+        }
+
+        .legal-section ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 1.5rem 0;
+        }
+
+        .legal-section ul li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.0625rem;
+            line-height: 1.7;
+            color: var(--slate);
+        }
+
+        .legal-section ul li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--gold-primary);
+            font-weight: 700;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(201, 169, 97, 0.1), rgba(212, 175, 55, 0.05));
+            border-left: 4px solid var(--gold-primary);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            margin: 2rem 0;
+        }
+
+        .highlight-box p {
+            margin: 0;
+        }
+
+        .contact-info {
+            background: var(--cream);
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        .contact-info h3 {
+            font-family: var(--font-display);
+            font-size: 1.75rem;
+            color: var(--navy-deep);
+            margin-bottom: 1rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info a {
+            color: var(--gold-primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .last-updated {
+            text-align: center;
+            font-style: italic;
+            color: var(--slate);
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(201, 169, 97, 0.3);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--navy-deep);
+            color: var(--champagne);
+            padding: 3rem 0 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--champagne);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--gold-bright);
+        }
+
+        .footer p {
+            font-size: 0.875rem;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .legal-hero {
+                padding: 120px 1.5rem 60px;
+            }
+
+            .legal-content {
+                padding: 60px 1.5rem;
+            }
+
+            .legal-section h2 {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-wrapper">
+                <div class="logo-main">Amanda Benedetta</div>
+                <div class="logo-tagline">Book Marketing Strategist</div>
+            </a>
+            <a href="index.html" class="back-home">← Back to Home</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="legal-hero">
+        <h1>Terms of Service</h1>
+        <p>Please read these terms carefully before using our services</p>
+    </section>
+
+    <!-- Legal Content -->
+    <div class="legal-content">
+        <div class="legal-section">
+            <div class="highlight-box">
+                <p><strong>Effective Date:</strong> January 1, 2024</p>
+                <p><strong>Last Updated:</strong> January 1, 2024</p>
+            </div>
+        </div>
+
+        <div class="legal-section">
+            <h2>1. Agreement to Terms</h2>
+            <p>These Terms of Service ("Terms") constitute a legally binding agreement between you and Amanda Benedetta Book Marketing Services ("Company," "we," "us," or "our") concerning your access to and use of our website and services.</p>
+            <p>By accessing our website or engaging our services, you agree that you have read, understood, and agree to be bound by these Terms. If you do not agree with these Terms, you must not access our website or use our services.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>2. Services Description</h2>
+            <p>Amanda Benedetta Book Marketing Services provides professional book marketing and promotional services to authors, including but not limited to:</p>
+            <ul>
+                <li>Pre-launch strategy and consultation</li>
+                <li>Book launch campaign management</li>
+                <li>Digital marketing and advertising</li>
+                <li>Social media marketing and content creation</li>
+                <li>Public relations and media outreach</li>
+                <li>Amazon optimization and advertising</li>
+                <li>Author branding and platform development</li>
+            </ul>
+            <p>Specific services, deliverables, and timelines will be outlined in individual service agreements or contracts.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>3. Client Responsibilities</h2>
+            <p>As a client engaging our services, you agree to:</p>
+            <ul>
+                <li>Provide accurate and complete information about your book and marketing goals</li>
+                <li>Respond to requests for information and feedback in a timely manner</li>
+                <li>Provide necessary materials (book files, images, author bio, etc.) as requested</li>
+                <li>Ensure you have all necessary rights to the content you provide</li>
+                <li>Make timely payments according to the agreed payment terms</li>
+                <li>Communicate openly and professionally throughout the engagement</li>
+                <li>Comply with all applicable laws and platform terms of service</li>
+            </ul>
+        </div>
+
+        <div class="legal-section">
+            <h2>4. Payment Terms</h2>
+            
+            <h3>4.1 Fees and Pricing</h3>
+            <p>Service fees are outlined in our package descriptions or individual service agreements. All prices are in USD unless otherwise specified.</p>
+
+            <h3>4.2 Payment Schedule</h3>
+            <p>Payment terms will be specified in your service agreement and may include:</p>
+            <ul>
+                <li>Full payment upfront for smaller packages</li>
+                <li>50% deposit with remainder due before campaign launch</li>
+                <li>Monthly installments for extended campaigns</li>
+            </ul>
+
+            <h3>4.3 Late Payments</h3>
+            <p>Late payments may result in suspension of services and/or late fees. Services will not resume until all outstanding balances are paid in full.</p>
+
+            <h3>4.4 Refund Policy</h3>
+            <p>Deposits are non-refundable once work has commenced. Refunds for services not yet performed may be considered on a case-by-case basis, minus any work already completed and administrative fees.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>5. Intellectual Property Rights</h2>
+            
+            <h3>5.1 Your Content</h3>
+            <p>You retain all rights to your book content, author materials, and any intellectual property you provide to us. By engaging our services, you grant us a limited license to use, reproduce, and display your content solely for the purpose of providing marketing services.</p>
+
+            <h3>5.2 Our Content</h3>
+            <p>All marketing materials, strategies, reports, and campaign elements created by us remain our intellectual property unless explicitly transferred in writing. Upon full payment, you receive a license to use these materials for your book marketing purposes.</p>
+
+            <h3>5.3 Portfolio Use</h3>
+            <p>We reserve the right to use your project as a case study or portfolio piece, including displaying book covers, campaign results, and testimonials, unless you explicitly opt out in writing.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>6. Service Guarantees and Limitations</h2>
+            
+            <div class="highlight-box">
+                <p><strong>Important:</strong> While we employ industry best practices and proven strategies, we cannot guarantee specific sales numbers, rankings, or reviews. Book marketing success depends on many factors, including market conditions, book quality, timing, and reader preferences.</p>
+            </div>
+
+            <p>We guarantee to:</p>
+            <ul>
+                <li>Deliver services as outlined in your agreement</li>
+                <li>Apply industry best practices and ethical marketing methods</li>
+                <li>Provide regular communication and progress updates</li>
+                <li>Work diligently to achieve the best possible results</li>
+            </ul>
+
+            <p>We do not guarantee:</p>
+            <ul>
+                <li>Specific sales figures or revenue amounts</li>
+                <li>Amazon bestseller status or specific rankings</li>
+                <li>Number of reviews or review ratings</li>
+                <li>Media coverage or specific publicity outcomes</li>
+                <li>Results from factors outside our control</li>
+            </ul>
+        </div>
+
+        <div class="legal-section">
+            <h2>7. Confidentiality</h2>
+            <p>We agree to maintain the confidentiality of any proprietary or sensitive information you share with us, including:</p>
+            <ul>
+                <li>Unpublished manuscripts or book content</li>
+                <li>Marketing strategies and business plans</li>
+                <li>Financial information</li>
+                <li>Personal contact information</li>
+            </ul>
+            <p>This obligation continues even after the termination of our services, except where disclosure is required by law or with your written consent.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>8. Term and Termination</h2>
+            
+            <h3>8.1 Service Term</h3>
+            <p>Service agreements will specify the duration of our engagement. Some services are project-based with defined end dates, while others may be ongoing monthly retainers.</p>
+
+            <h3>8.2 Termination by Client</h3>
+            <p>You may terminate services with 30 days' written notice. You will be responsible for payment for all work completed up to the termination date, and deposits are non-refundable.</p>
+
+            <h3>8.3 Termination by Company</h3>
+            <p>We reserve the right to terminate services if:</p>
+            <ul>
+                <li>Payment terms are not met</li>
+                <li>You breach these Terms</li>
+                <li>You provide false or misleading information</li>
+                <li>Continued service is not feasible or ethical</li>
+            </ul>
+
+            <h3>8.4 Effect of Termination</h3>
+            <p>Upon termination, we will provide you with all completed work and materials. You remain responsible for all outstanding payments for services rendered.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>9. Limitation of Liability</h2>
+            <p>To the fullest extent permitted by law:</p>
+            <ul>
+                <li>Our total liability shall not exceed the amount you paid for services</li>
+                <li>We are not liable for indirect, incidental, or consequential damages</li>
+                <li>We are not responsible for third-party platform policy changes or actions</li>
+                <li>We are not liable for results affected by factors outside our control</li>
+                <li>We are not responsible for your book's content, quality, or marketability</li>
+            </ul>
+        </div>
+
+        <div class="legal-section">
+            <h2>10. Indemnification</h2>
+            <p>You agree to indemnify and hold harmless Amanda Benedetta Book Marketing Services from any claims, damages, losses, or expenses arising from:</p>
+            <ul>
+                <li>Your breach of these Terms</li>
+                <li>Your violation of any laws or third-party rights</li>
+                <li>Content you provide that infringes on intellectual property rights</li>
+                <li>Misrepresentation of information provided to us</li>
+            </ul>
+        </div>
+
+        <div class="legal-section">
+            <h2>11. Compliance with Platform Policies</h2>
+            <p>All marketing activities will be conducted in accordance with the terms of service and policies of relevant platforms, including:</p>
+            <ul>
+                <li>Amazon's Terms of Service and Community Guidelines</li>
+                <li>Social media platform policies (Facebook, Instagram, TikTok, etc.)</li>
+                <li>Email marketing regulations (CAN-SPAM, GDPR)</li>
+                <li>Advertising standards and regulations</li>
+            </ul>
+            <p>We reserve the right to refuse any marketing activity that violates platform policies or ethical standards.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>12. Modifications to Terms</h2>
+            <p>We reserve the right to modify these Terms at any time. Changes will be effective immediately upon posting to our website. Your continued use of our services after changes constitutes acceptance of the modified Terms.</p>
+            <p>For clients with active service agreements, material changes will be communicated via email, and existing agreements will be governed by the terms in effect at the time of signing.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>13. Dispute Resolution</h2>
+            
+            <h3>13.1 Informal Resolution</h3>
+            <p>In the event of any dispute, we encourage you to contact us first to seek an informal resolution.</p>
+
+            <h3>13.2 Mediation</h3>
+            <p>If informal resolution fails, both parties agree to attempt mediation before pursuing other legal remedies.</p>
+
+            <h3>13.3 Governing Law</h3>
+            <p>These Terms shall be governed by and construed in accordance with the laws of the United States, without regard to conflict of law principles.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>14. Entire Agreement</h2>
+            <p>These Terms, together with any written service agreement, constitute the entire agreement between you and Amanda Benedetta Book Marketing Services regarding our services and supersede all prior agreements and understandings.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>15. Severability</h2>
+            <p>If any provision of these Terms is found to be unenforceable or invalid, that provision will be limited or eliminated to the minimum extent necessary so that the Terms will otherwise remain in full force and effect.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>16. Waiver</h2>
+            <p>Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. Any waiver must be in writing and signed by an authorized representative.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>17. Contact Information</h2>
+            <div class="contact-info">
+                <h3>Questions About These Terms?</h3>
+                <p>If you have any questions or concerns regarding these Terms of Service, please contact us:</p>
+                <p><strong>Email:</strong> <a href="mailto:amandabenedetta4@gmail.com">amandabenedetta4@gmail.com</a></p>
+                <p><strong>Website:</strong> <a href="index.html">www.amandabenedetta.com</a></p>
+            </div>
+        </div>
+
+        <div class="last-updated">
+            <p>These Terms of Service were last updated on January 1, 2024</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+                <a href="cookie-policy.html">Cookie Policy</a>
+            </div>
+            <p>&copy; 2024 Amanda Benedetta. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
