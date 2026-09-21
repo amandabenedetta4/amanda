@@ -71,22 +71,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ============================================
-    // NAVIGATION
+    // NAVIGATION & SCROLL EFFECT
     // ============================================
     const header = document.getElementById('main-header');
     const hamburger = document.getElementById('hamburger');
     const mobileOverlay = document.getElementById('mobileOverlay');
 
-    // Scroll effect
-    let lastScroll = 0;
+    // Header scroll background effect (Fixes the overlapping text issue)
     window.addEventListener('scroll', () => {
-        const currentScroll = window.pageYOffset;
-        if (currentScroll > 50) {
+        if (window.scrollY > 50) {
             header.classList.add('scrolled');
         } else {
             header.classList.remove('scrolled');
         }
-        lastScroll = currentScroll;
     });
 
     // Mobile menu
@@ -276,17 +273,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // Boutique section
-        gsap.from('.boutique-text', {
-            scrollTrigger: {
-                trigger: '.boutique-text',
-                start: 'top 80%',
-                toggleActions: 'play none none none'
-            },
-            opacity: 0,
-            x: -40,
-            duration: 0.8,
-            ease: 'power3.out'
-        });
+        if (document.querySelector('.boutique-text')) {
+            gsap.from('.boutique-text', {
+                scrollTrigger: {
+                    trigger: '.boutique-text',
+                    start: 'top 80%',
+                    toggleActions: 'play none none none'
+                },
+                opacity: 0,
+                x: -40,
+                duration: 0.8,
+                ease: 'power3.out'
+            });
+        }
 
         gsap.utils.toArray('.diff-card').forEach((card, i) => {
             gsap.from(card, {
@@ -590,16 +589,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     } // end initAnimations
 
-   // --- HEADER SCROLL EFFECT ---
-const header = document.querySelector('.header');
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-    } else {
-        header.classList.remove('scrolled');
-    }
-});
     // ============================================
     // SMOOTH SCROLL FOR ANCHOR LINKS
     // ============================================
